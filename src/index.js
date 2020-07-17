@@ -16,6 +16,15 @@ app.use(express.json());
 app.use(userRouter);
 app.use(taskRouter);
 
+// index page route
+app.get('/', (req, res)=>{
+    res.send('<p>created by:</p> <strong> Mahmoud Ezz </strong> <p>github repo:</p> <a href="https://github.com/MahmoudEzz/nodejs-task-manager-api"> Link </a>')
+})
+// 404 route 
+app.get('*', (req, res)=>{
+    res.status(404).send('404 Page not found');
+})
+
 app.listen(port, ()=>{
     console.log('Server is listening on port :'+ port);
 })
