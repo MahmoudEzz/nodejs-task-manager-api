@@ -15,6 +15,7 @@ In this little project I've used express for starting my server and dealing with
 * sharp -> manipulate images
 * SendGrid -> sending emails
 * Atlas -> mongodb for production
+* jest -> for testing
 --- 
 I've deployed this simple project on Heroku which you can have a look on it by this link: https://ezz-task-manager.herokuapp.com/
 and test the project using the provided postman collection I've used in the Repo.
